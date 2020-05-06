@@ -1,0 +1,36 @@
+div(class="section")
+  div(class="label") Method
+  div(class="value post") post
+div(class="section")
+  div(class="label") Route
+  div(class="value") http://localhost:1337/api/animals
+div(class="section")
+  div(class="label") Headers
+  div(class="value")
+    div(class="header-name") Content-Type
+    div(class="header-value") application/json
+div(class="section")
+  div(class="label") Body
+  div(class="value")
+    pre
+      | {
+      |   "name": "Leo",
+      |   "species": "Lion",
+      |   "departmentId": 1
+      | }
+div(class="section")
+  div(class="label") Description
+  div(class="value") Creates a new animal from the data provided in the body.
+div(class="section")
+  div(class="label") Response
+  div(class="value")
+    pre
+      | {
+      |   "id": 4,
+      |   "name": "Leo",
+      |   "species": "Lion",
+      |   "protected": false,
+      |   "departmentId": 1,
+      |   "createdAt": "2020-05-06T00:05:58.269Z",
+      |   "updatedAt": "2020-05-06T00:05:58.269Z"
+      | }

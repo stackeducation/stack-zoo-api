@@ -1,0 +1,87 @@
+doctype html
+html
+  include partials/head.pug
+
+  body
+    div(class="container")
+      div(class="header")
+        div(class="logo")
+          a(href="/")
+            img(src="/images/logo.png", height="128", width="318")
+
+    div(class="content")
+      div(class="title") Welcome to the Stack Education Zoo
+      div(class="doc-panels")
+        div(class="sidebar")
+          div(id="get-departments-end-point", class="endpoint selected")
+            a(onclick="activateEndpoint('get-departments')")
+              span(class="get") GET
+              |  /departments
+          div(id="get-departments-id-end-point", class="endpoint")
+            a(onclick="activateEndpoint('get-departments-id')")
+              span(class="get") GET
+              |  /departments/{id}
+          div(id="post-departments-end-point", class="endpoint")
+            a(onclick="activateEndpoint('post-departments')")
+              span(class="post") POST
+              |  /departments
+          div(id="delete-departments-end-point", class="endpoint")
+            a(onclick="activateEndpoint('delete-departments')")
+              span(class="delete") DELETE
+              |  /departments/{id}
+          div(id="get-animals-end-point", class="endpoint newroute")
+            a(onclick="activateEndpoint('get-animals')")
+              span(class="get") GET
+              |  /animals
+          div(id="get-animals-id-end-point", class="endpoint")
+            a(onclick="activateEndpoint('get-animals-id')")
+              span(class="get") GET
+              |  /animals/{id}
+          div(id="post-animals-end-point", class="endpoint")
+            a(onclick="activateEndpoint('post-animals')")
+              span(class="post") POST
+              |  /animals
+          div(id="delete-animals-end-point", class="endpoint")
+            a(onclick="activateEndpoint('delete-animals')")
+              span(class="delete") DELETE
+              |  /animals/{id}
+          div(id="get-keepers-end-point", class="endpoint newroute")
+            a(onclick="activateEndpoint('get-keepers')")
+              span(class="get") GET
+              |  /zookeepers
+          div(id="get-keepers-id-end-point", class="endpoint")
+            a(onclick="activateEndpoint('get-keepers-id')")
+              span(class="get")  GET
+              |  /zookeepers/{id}
+          div(id="post-keepers-end-point", class="endpoint")
+            a(onclick="activateEndpoint('post-keepers')")
+              span(class="post") POST
+              |  /zookeepers
+          div(id="delete-keepers-end-point", class="endpoint")
+            a(onclick="activateEndpoint('delete-keepers')")
+              span(class="delete") DELETE
+              |  /zookeepers/{id}
+        div(id="get-departments-doc", class="doc")
+          include partials/docs/getDepartments.pug
+        div(id="get-departments-id-doc", class="doc hidden")
+          include partials/docs/getDepartmentById.pug
+        div(id="post-departments-doc", class="doc hidden")
+          include partials/docs/postDepartment.pug
+        div(id="delete-departments-doc", class="doc hidden")
+          include partials/docs/deleteDepartment.pug
+        div(id="get-animals-doc", class="doc hidden")
+          include partials/docs/getAnimals.pug
+        div(id="get-animals-id-doc", class="doc hidden")
+          include partials/docs/getAnimalById.pug
+        div(id="post-animals-doc", class="doc hidden")
+          include partials/docs/postAnimal.pug
+        div(id="delete-animals-doc", class="doc hidden")
+          include partials/docs/deleteAnimal.pug
+        div(id="get-keepers-doc", class="doc hidden")
+          include partials/docs/getZooKeepers.pug
+        div(id="get-keepers-id-doc", class="doc hidden")
+          include partials/docs/getZooKeeperById.pug
+        div(id="post-keepers-doc", class="doc hidden")
+          include partials/docs/postZooKeeper.pug
+        div(id="delete-keepers-doc", class="doc hidden")
+          include partials/docs/deleteZooKeeper.pug

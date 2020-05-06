@@ -1,0 +1,48 @@
+div(class="section")
+  div(class="label") Method
+  div(class="value get") get
+div(class="section")
+  div(class="label") Route
+  div(class="value") http://localhost:1337/api/zookeepers
+div(class="section")
+  div(class="label") Description
+  div(class="value") Returns a list of all the zoo keepers working at the zoo.
+div(class="section")
+  div(class="label") Response
+  div(class="value")
+    pre
+      | [{
+      |   id: 1,
+      |   name: "Rich DiTieri",
+      |   title: "Chief Lion Tamer",
+      |   protected: true,
+      |   departmentId: 1,
+      |   createdAt: "2020-05-05T23:26:47.000Z",
+      |   updatedAt: "2020-05-05T23:26:47.000Z",
+      |   deletedAt: null,
+      |   department: {
+      |     id: 1,
+      |     name: "Big Cats",
+      |     protected: true,
+      |     createdAt: "2020-05-05T23:26:47.000Z",
+      |     updatedAt: "2020-05-05T23:26:47.000Z",
+      |     deletedAt: null
+      |     }
+      | }, {
+      |   id: 2,
+      |   name: "John Rice",
+      |   title: "Guest Happiness Officer",
+      |   protected: true,
+      |   departmentId: 2,
+      |   createdAt: "2020-05-05T23:26:47.000Z",
+      |   updatedAt: "2020-05-05T23:26:47.000Z",
+      |   deletedAt: null,
+      |   department: {
+      |     id: 2,
+      |     name: "Executive",
+      |     protected: true,
+      |     createdAt: "2020-05-05T23:26:47.000Z",
+      |     updatedAt: "2020-05-05T23:26:47.000Z",
+      |     deletedAt: null
+      |   }
+      | }]

@@ -1,0 +1,32 @@
+div(class="section")
+  div(class="label") Method
+  div(class="value post") post
+div(class="section")
+  div(class="label") Route
+  div(class="value") http://localhost:1337/api/departments
+div(class="section")
+  div(class="label") Headers
+  div(class="value")
+    div(class="header-name") Content-Type
+    div(class="header-value") application/json
+div(class="section")
+  div(class="label") Body
+  div(class="value")
+    pre
+      | {
+      |   "name": "Concessions"
+      | }
+div(class="section")
+  div(class="label") Description
+  div(class="value") Creates a new department from the data provided in the body.
+div(class="section")
+  div(class="label") Response
+  div(class="value")
+    pre
+      | {
+      |   "id": 6,
+      |   "name": "Concessions",
+      |   "protected": false,
+      |   "createdAt": "2020-05-06T00:03:48.877Z",
+      |   "updatedAt": "2020-05-06T00:03:48.877Z"
+      | }
